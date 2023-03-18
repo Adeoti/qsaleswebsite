@@ -1,0 +1,134 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* btn inheritance*/
+%btn{
+    border:none;
+    outline:none;
+    text-decoration: none;
+    border-radius:0.4rem;
+
+        &:hover{
+            transform:scale(.98);
+            transition:all 100ms ease-in-out ;
+        }
+}
+
+
+/* Margin and padding classes */
+
+$spaceamounts:(1,2,3,4,5,6,7,8,9,10);
+
+@each $space in $spaceamounts{
+
+    .m-#{$space}{
+        margin:#{$space}rem;
+    }
+
+    .my-#{$space}{
+        margin:#{$space}rem 0;
+    }
+
+    .mx-#{$space}{
+        margin:0 #{$space}rem;
+    }
+
+    .mxy-#{$space}{
+        margin:#{$space}rem #{$space}rem;
+    }
+    .myt-#{$space}{
+        margin-top:#{$space}rem;
+    }
+    .myb-#{$space}{
+        margin-bottom:#{$space}rem;
+    }
+
+
+    .p-#{$space}{
+        padding:#{$space}rem;
+    }
+    .py-#{$space}{
+        padding:#{$space}rem 0;
+    }
+    .px-#{$space}{
+        padding:0 #{$space}rem;
+    }
+    .pxy-#{$space}{
+        padding:#{$space}rem #{$space}rem;
+    }
+    .pyt-#{$space}{
+        padding-top:#{$space}rem;
+    }
+    .pyb-#{$space}{
+        padding-bottom:#{$space}rem;
+    }
+    
+}
+
+/*Margin Auto*/
+.m-auto{
+    margin:auto;
+}
+
+/* Gap Classes*/
+
+$gapspaces:(0,1,2,3,4,5,6,7,8,9,10);
+@each $gap in $gapspaces{
+
+        .gap-#{$gap}{
+            gap:#{$gap}rem;
+        }
+
+}
+
+/* Size Classes*/
+
+$fontsizes: (1,2,3,4,5,6,7,8,9,10);
+
+@each $font in $fontsizes{
+    .size-#{$font}{
+        font-size:#{$font}rem;
+    }
+}
+
+.size{
+    &-x{
+        font-size:0.9rem;
+    }
+    &-xs{
+        font-size:0.7rem;
+    }
+}
+/* Text Bold Classes*/
+
+    $fontweights:(100,200,400,500,600,700,900);
+
+    @each $weight in $fontweights{
+        .text-#{$weight}{
+            font-weight:#{$weight};
+        }
+    }
+
+/* Border-radius classes*/
+
+$borderradiuss: (0,1,2,3,4,5,6,7,8,9,10);
+
+@each $radius in $borderradiuss{
+    .br-#{$radius}{
+        border-radius:#{$radius}rem;
+    }
+}
+
+    .br{
+        &-x{
+        border-radius:0.7rem;
+    }
+        &-xs{
+            border-radius:0.4rem;
+        }
+}

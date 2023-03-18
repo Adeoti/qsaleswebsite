@@ -1,0 +1,128 @@
+@import 'colors';
+@import 'config';
+@import 'utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+body{
+    background-color:#eff0f3;
+    line-height:1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Footer design*/
+.footer{
+    background-color:$black-tick;
+    color:$white;
+    font-weight:500;
+
+    .copyright{
+        text-align:center;
+        border-top: 1px solid lighten(#000000, 20);
+
+    }
+}
+
+
+
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        
+        div{
+            border:1px solid #eeeeee;
+            place-content:center;
+            display: grid;
+        }
+    }
+    
+
+
+
+
+.light-white{
+    color:lighten(#000,70);
+}
+
+.icon-list{
+        .icon{
+            padding:0.7rem;
+            border-radius:0.4rem;
+            background-color:$primary-color;
+        }
+}
+
+
+
+.nav{
+    ul{
+        li{
+            list-style-type:none;
+            a{
+                text-decoration:none;
+                font-weight:600;
+                color:$black-ban;
+                &:hover{
+                    color:$primary-color;
+                    transition: color 100ms ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+.hero__right{
+    border:10px solid $white;
+}
+
+
+/*Navbar Handling...*/
+
+/* Handling dot design*/
+.dot-design{
+    position: absolute;
+    opacity:.8;
+    right:0%;
+    top:-16px;
+    height:30px;
+    width:30px;
+    border-radius:100%;
+    background:radial-gradient($gradient-color-from, $gradient-color-to);
+}
+
+/*Logo*/
+
+.logo{
+    font-size: 1.2rem;
+}
+
+
+
+
+/*About Us*/
+.about-rainbow{
+    height:570px;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 7%;
+    width:60%;
+
+    .about-circle{
+        position: absolute;
+        height:450px;
+        width:450px;
+        z-index:1000;
+        border:11px solid $white;
+        top:-50px;
+        left:-200px;
+        border-radius:100%;
+        overflow: hidden;
+    }
+}
+
+/*What-we-do*/
+.what-we-do{
+    background:#f7faff;
+}
