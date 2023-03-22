@@ -1,0 +1,197 @@
+/* Mobile Devices*/
+@media (min-width:640px){
+    .nav{
+        .mobile-toggler{
+            display:none;
+        }
+        .desktop{
+            display:flex;
+        }
+        .mobile{
+            display: none;
+        }
+    }
+
+    .testimony{
+        .mobile{
+            display:none !important;
+        }
+        .desktop{
+            display:block !important;
+        }
+        }
+}
+@media (max-width:640px){
+    /* handling the nav bar*/
+    .nav.pos-rel{
+        position: static;
+    }
+    .nav{
+        .mobile-toggler{
+            display:block;
+            background-color:$black-tick;
+            padding:8px 12px;
+            border:none;
+            cursor:pointer;
+            color:$white;
+            font-size:20px;
+            border-radius:5px;
+        }
+        .desktop{
+            display:none;
+        }
+        .mobile{
+            display: block;
+            width:100%;
+            height:100vh;
+            position:fixed;
+            z-index: 1000;
+            top:-20px;
+            left:0px;
+            right:0px;
+            text-align:center;
+            background-color: $black-tick;
+            li{
+                margin:20px 0px;
+                width:100%;
+                padding:12px 0px;
+                
+                button,a{
+                    color:$white;
+                    display: block;
+                    width:100%;
+                    &:active{
+                        color:$white;
+                    }
+                }
+
+                &:active{
+                    background-color:$primary-color;
+                    color:$white;
+                }
+            }
+        }
+    }
+
+    .what-we-do-flex{
+       grid-template-columns:repeat(1,4fr) !important;
+       
+    }
+    .o1{
+        order:1;
+    }
+    .o2{
+        order:2;
+    }
+    .testimony{
+        .flex{
+            display:grid;
+        }
+        .desktop{
+            display:none !important;
+        }
+        .mobile{
+            display:block  !important;
+        }
+        }
+    .of-partners, .of-faq, .of-footer{
+       display:grid;
+       gap:50px !important;
+       grid-template-columns: 4fr;
+    }
+    .w-25, .w-60, .w-40, .w-50{
+        width:100% !important;
+    }
+    .border-lit-right-left{
+        position: relative;
+        margin:0px auto;
+        max-width:100%;
+        
+        span{
+            background-color:inherit;
+            z-index:2000;
+        }
+       
+    
+        &.sm::after{
+            right:30% !important; 
+            width:40px;
+        }
+        
+        &.sm::before{
+            right:30% !important; 
+            width:40px;
+           
+        }
+       
+    
+    
+    
+    }
+
+}
+
+/*Tablet Devices*/
+@media (max-width:768px){
+    .container{
+        padding:0px 3rem;
+        &.box{
+            max-width: 10220px;
+            margin: 0px auto;
+        }
+    }
+
+
+
+
+    .border-lit-right-left{
+        position: relative;
+        margin:0px auto;
+        max-width:100%;
+        
+        span{
+            background-color:inherit;
+            z-index:2000;
+        }
+       
+    
+        &.sm::after{
+            right:-3% !important;
+        }
+        
+    
+        &.sm::before{
+            left:-3%  !important;
+        }
+       
+    
+    
+    
+    }
+
+    .gap-2{
+        gap:3px;
+    }
+
+    .what-we-do-flex{
+        display: grid;
+        grid-template-columns: 4fr 4fr;
+    }
+    .w-25{
+        width:100%;
+    }
+
+    .w-50{
+        width:100%;
+    }
+    .hero__intro{
+        background-color:#fdfdfd;
+        padding:20px;
+    }
+
+
+
+    .left-cast{
+        display: none;
+    }
+}

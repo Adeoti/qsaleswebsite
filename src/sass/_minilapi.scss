@@ -1,0 +1,42 @@
+@media (max-width:1024px){
+    .container{
+        padding:0px 3rem;
+        &.box{
+            max-width: 10220px;
+            margin: 0px auto;
+        }
+    }
+
+
+
+
+    .border-lit-right-left{
+        position: relative;
+        margin:0px auto;
+        max-width:40%;
+        span{
+            background-color:inherit;
+            z-index:2000;
+        }
+       
+    
+        &.sm::after{
+            right:10%;
+        }
+        
+    
+        &.sm::before{
+            
+            left:10%;
+        }
+       
+    
+    
+    
+    }
+
+    .gap-2{
+        gap:10px;
+    }
+
+}

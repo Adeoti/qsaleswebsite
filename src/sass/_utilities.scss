@@ -37,14 +37,23 @@
 /*Widths*/
 .w{
     &-10{width:10%;}
+    &-15{width:15%;}
     &-20{width:20%;}
+    &-25{width:25%;}
     &-30{width:30%;}
+    &-35{width:35%;}
     &-40{width:40%;}
+    &-45{width:45%;}
     &-50{width:50%}
+    &-55{width:55%}
     &-60{width:60%;}
+    &-65{width:65%;}
     &-70{width:70%}
+    &-75{width:75%}
     &-80{width:80%;}
+    &-85{width:85%;}
     &-90{width:90%;}
+    &-95{width:95%;}
     &-100{width:100%}
 }
 
@@ -118,6 +127,12 @@
 }
 .border-lit-right-left{
     position: relative;
+    margin:0px auto;
+    max-width:40%;
+    span{
+        background-color:inherit;
+        z-index:2000;
+    }
     &.lg::after{
         content: "";
         top:50%;
@@ -135,9 +150,9 @@
         background:radial-gradient($gradient-color-from,$gradient-color-to);
         width:70px;
         height:3px;
+        right:20%;
         margin:0px 10px;
     }
-
     &.lg::before{
         content: "";
         top:50%;
@@ -145,6 +160,7 @@
         background:radial-gradient($gradient-color-from,$gradient-color-to);
         width:70px;
         height:6px;
+        left:20%;
         margin:0px 10px;
     }
 
@@ -155,9 +171,11 @@
         background:radial-gradient($gradient-color-from,$gradient-color-to);
         width:70px;
         height:3px;
-        left:38%;
+        left:20%;
         margin:0px 10px;
     }
+   
+
 
 
 }
@@ -192,3 +210,57 @@
         }
     }
 }
+
+/*Badges*/
+.badge{
+    position: relative;
+    .badge-item{
+        position: relative;
+        min-height: 270px;
+        .badge-circle{
+            height:210px;
+            width:210px;
+            border-radius:100%;
+            border:10px solid $white;
+        }
+
+        .badge-body{
+            margin-bottom:10px;
+            border-radius:0.7rem;
+            border-top-left-radius:4rem;
+        }
+}
+    
+}
+
+/*Rendering Accordion*/
+
+.accordion{
+    background-color:rgb(241, 230, 164,0.2);
+    padding:14px 22px;
+    border-radius:6px;
+    border:1px solid lighten(grey,41);
+    .title__wrapper{
+
+        cursor:pointer;
+    }
+    &__title{
+        font-weight:600;
+        color:$black-tick;
+        
+    }
+    &__content{
+        display:none;
+        opacity: 0.3;
+        margin-top:5px;
+        max-height:1px;
+        
+        &.show{
+            display:block;
+            opacity: 1;
+            max-height:1000px;
+            transition: all 2s ease-in-out;
+        }
+    }
+}
+

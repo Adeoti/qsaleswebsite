@@ -2,9 +2,14 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='footer pyt-7'>
+    <div className='footer pyt-7 pos-rel'>
+        
+            <div className="go-upper">
+            <a href="#topper" title="go up" className='bg-grad p-1 br-1 text-900 txt-white'><i className="fa fa-arrow-up"></i></a>
+            </div>
+        
       <div className='container box'>
-            <div className='flex spc-btw pyb-5 gap-5'>
+            <div className='flex of-footer spc-btw pyb-5 gap-5'>
                 <div className='w-100'>
                     <h3 className='myb-1 size-2'>Q-Sales</h3>
                     <p className='text-400'>
@@ -18,7 +23,15 @@ const Footer = () => {
                 </div>
                 </div>
                 <div className='w-100'>
-                    <h3 className="myb-1 size-2 border-lit-right lg">Help Links</h3>
+                    <h3 className="myb-1 size-2 border-lit-right lg">Quick Links</h3>
+                    <div className="myt-1">
+                        <ul className='quicklink'>
+                            <li><a href="#aboutus" className="txt-white text-500">About Us</a></li>
+                            <li><a href="#testimony" className="txt-white text-500">Testimonial</a></li>
+                            <li><a href="#contactus" className="txt-white text-500">Contact Us</a></li>
+                            <li><a href="#aboutus" className="txt-white text-500">About Us</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div className='w-100'>
                     <h3 className='myb-1 size-2'>Official Info</h3>
@@ -35,7 +48,7 @@ const Footer = () => {
                             <div><i className='icon fa fa-envelope'></i></div>
                             <div>
                                 <span className="text-400 light-white">Mail Us</span><br/>
-                                    <span className='text-600'>+2348021745111</span>
+                                    <span className='text-600'>info@getqsales.com</span>
                             </div>
                         </div>
 

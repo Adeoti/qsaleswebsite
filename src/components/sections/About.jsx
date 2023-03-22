@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import Aboutimg from '../../images/aboutus.jpg';
 
 const About = () => {
   return (
-    <div className='about bg-grey'>
+    <div className='about bg-grey' id="aboutus">
       <div className='container box'>
       <div className='flex spc-btw gap-3 py-4 '>
             
@@ -26,16 +27,19 @@ const About = () => {
                     <div className='card-item flex gap-1'>
                         <div className='icon'><i className='fa fa-trophy size-2'></i></div>
                         <div>
+                        
                             <h3 className='txt-black'>Exceptional IT Services</h3>
                             <p className='txt-grey '>From consultation to training; and to app development, we are exceptional.</p>
                         </div>
                     </div>
                 </div>
-                <a href='' className='btn secondary lg text-500'>Get in touch &nbsp; &nbsp; <i className='fa fa-plus'></i></a>
+                <a href='#contactfaq' className='btn secondary lg text-500'>Get in touch &nbsp; &nbsp; <i className='fa fa-plus'></i></a>
             </div>
-            <div className=' w-50 flex spc-btw'><div></div>
+            <div className=' w-50 flex left-cast spc-btw'><div></div>
                 <div className='pos-rel  about-rainbow bg-grad'>
-                    <div className='about-circle'></div>
+                    <div className='about-circle'>
+                        <img src={Aboutimg}  style={{objectFit:'cover', width:'100%', height:'100%'}}/>
+                    </div>
 
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import Herolapi from '../images/herolap.png';
+import Herolapi from '../images/heroimg.jpg';
 
 const Hero = () => {
 
@@ -15,12 +15,12 @@ const Hero = () => {
                             Get the most intuitive and durable software and apps from us; and have a reason to be happy as you grow.
                         </p>
                         <div className="flex gap-1">
-                            <a href="#" className="btn text-500 lg primary">About Us &nbsp; &nbsp; + </a>
-                            <a href="#" className="btn lg secondary">Our Services &nbsp; &nbsp; +</a>
+                            <a href="#aboutus" className="btn text-500 lg primary">About Us &nbsp; &nbsp; + </a>
+                            <a href="#whatwedo" className="btn lg secondary">Our Services &nbsp; &nbsp; +</a>
                         </div>
                     </div>
-                    <div className="w-50 hero__right br-1">
-                        <img src={Herolapi} className="w-100" alt="Heor image"/>
+                    <div className="w-50 left-cast hero__right br-2 hero-pik-hang" style={{overflow:'hidden', minHeight:'500px'}}>
+                        <img src={Herolapi} className="w-100" style={{objectFit:'cover', height:'100%'}}alt="Heor image"/>
                     </div>
                 </div>
             </div>
