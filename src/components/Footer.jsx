@@ -62,8 +62,12 @@ const Footer = () => {
 
                 </div>
             </div>
-        <div className='copyright py-1 myt-2'>
-            &copy; 2023 Q-Sales - All rights reserved
+        <div className='copyright spc-btw flex py-1 myt-2'>
+          
+            <div>
+                 &copy; 2023 Q-Sales - All rights reserved
+            </div>
+            <div> Website by <a href='https://adeoti.netlify.app'>Adeoti Nurudeen</a></div>
         </div>
       </div>
     </div>

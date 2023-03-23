@@ -176,7 +176,14 @@
     }
 
 
-
+    .copyright.flex{
+        display: grid;
+        text-align: justify;
+        gap:10px;
+            a{
+                color:$white;
+            }
+    }
 
     .border-lit-right-left{
         position: relative;
