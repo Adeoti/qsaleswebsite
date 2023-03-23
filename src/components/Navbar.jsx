@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className='navbar' id="topper">
         <div className='container box'>
-            <div className='top flex spc-btw my-1 text-500'>
+            <div className='top lok-mobile  flex spc-btw my-1 text-500'>
                 <div className='txt-black size-x'>Welcome to Q-Sales Official Website</div>
                 <div className=' size-x support-top txt-white'>
                     <i className='fa fa-envelope'></i> support@getqsales.com <span className="left-cast">, services@getqsales.com</span>
@@ -32,7 +32,7 @@ const Navbar = () => {
                 </ul>
                 {navstate && 
                     <ul className='flex left-cast gap-3 mobile'>
-                    <li><button className="mobile-toggler" onClick={toggleNav}><i className="fa fa-times size-2"></i></button></li>
+                    <li><button className="mobile-toggler" style={{color:'white'}} onClick={toggleNav}><i className="fa fa-times size-2"></i></button></li>
                     <li><a href="#topper" onClick={toggleNav}>Home</a></li>
                     <li><a href="#aboutus" onClick={toggleNav}>About</a></li>
                     <li><a href="#contact" onClick={toggleNav}>Contact</a></li>

@@ -14,7 +14,7 @@ const Hero = () => {
                         <p className="my-2 size-1 text-500 txt-black">
                             Get the most intuitive and durable software and apps from us; and have a reason to be happy as you grow.
                         </p>
-                        <div className="flex gap-1">
+                        <div className="flex hero-cta gap-1">
                             <a href="#aboutus" className="btn text-500 lg primary">About Us &nbsp; &nbsp; + </a>
                             <a href="#whatwedo" className="btn lg secondary">Our Services &nbsp; &nbsp; +</a>
                         </div>

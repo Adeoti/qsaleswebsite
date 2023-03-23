@@ -1,6 +1,13 @@
 import React from 'react';
 import Ayzeelogo from '../../images/logos/ayzeelogo.png';
 import Gtlogo from '../../images/logos/gtbanklogo.png';
+import Meenafimg from '../../images/meenaf.jpeg';
+import Supremeimg from '../../images/supreme.jpeg';
+import rabsmauimg from '../../images/rabsmau.jpeg';
+import Teefahimg from '../../images/teefah.jpeg';
+
+
+
 const Partners = () => {
   return (
     <div className='bg-grey m-0'>
@@ -9,10 +16,10 @@ const Partners = () => {
             <div className='grid w-60 o2'>
                 <div><img src={Ayzeelogo} style={{width:'100%', maxHeight:'75px'}}/></div>
                 <div><img src={Gtlogo} style={{width:'100%', maxHeight:'75px'}}/></div>
-                <div><img src={Ayzeelogo} style={{width:'100%', maxHeight:'75px'}}/></div>
-                <div><img src={Ayzeelogo} style={{width:'100%', maxHeight:'75px'}}/></div>
-                <div><img src={Ayzeelogo} style={{width:'100%', maxHeight:'75px'}}/></div>
-                <div><img src={Ayzeelogo} style={{width:'100%', maxHeight:'75px'}}/></div>
+                <div><img src={Meenafimg} style={{width:'100%', maxHeight:'75px'}}/></div>
+                <div><img src={rabsmauimg} style={{width:'100%', maxHeight:'75px'}}/></div>
+                <div><img src={Supremeimg} style={{width:'100%', maxHeight:'75px'}}/></div>
+                <div><img src={Teefahimg} style={{width:'100%', maxHeight:'75px'}}/></div>
                 
             </div>
             <div className=" w-40 o1">

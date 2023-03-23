@@ -22,11 +22,45 @@
         }
 }
 @media (max-width:640px){
+
+        .lok-mobile{
+            background:red;
+            display:none;
+        }
+    /*The Hero*/
+    .hero__intro{
+        background-color:#fdfdfd;
+        padding:4px;
+
+            .hero-cta{
+                .btn{
+                    font-size: 14px;
+                    padding:9px 12px;
+                }
+            }
+
+        .size-2{
+            font-size:15px;
+        }
+        .size-4, .size-5{
+            font-size:40px;
+        }
+    }
+
+    .container{
+        &.box{
+            padding:8px;
+        }
+    }
+
     /* handling the nav bar*/
     .nav.pos-rel{
         position: static;
     }
     .nav{
+        .top{
+            display: none !important;
+        }
         .mobile-toggler{
             display:block;
             background-color:$black-tick;
